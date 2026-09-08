@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <!-- Bulle IA (à gauche, sombre et élégante) -->
+    <TextView
+        android:id="@+id/tvAiMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@drawable/bg_bubble_ai"
+        android:textColor="#E2E8F0"
+        android:padding="14dp"
+        android:textSize="15sp"
+        android:layout_marginEnd="60dp"
+        android:elevation="2dp"
+        android:visibility="gone" />
+
+    <!-- Bulle Utilisateur (à droite, bleu néon) -->
+    <TextView
+        android:id="@+id/tvUserMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/bg_bubble_user"
+        android:textColor="#FFFFFF"
+        android:padding="14dp"
+        android:textSize="15sp"
+        android:layout_marginStart="60dp"
+        android:elevation="2dp"
+        android:visibility="gone" />
+
+</LinearLayout>
